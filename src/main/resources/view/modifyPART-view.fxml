@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="537.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.ModifyPARTController">
+    <children>
+        <Label layoutX="43.0" layoutY="68.0" text="Modify Part" textFill="#b52727">
+            <font>
+                <Font name="Rockwell" size="14.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="mpt_inhouse" layoutX="139.0" layoutY="68.0" mnemonicParsing="false" onAction="#mpt_inhouseSELECT" selected="true" text="In-House" textFill="#942828">
+            <toggleGroup>
+                <ToggleGroup fx:id="ap_group" />
+            </toggleGroup>
+            <font>
+                <Font name="Rockwell" size="12.0" />
+            </font></RadioButton>
+        <RadioButton fx:id="mpt_outsource" layoutX="251.0" layoutY="68.0" mnemonicParsing="false" onAction="#mpt_outsourceSELECT" text="Outsourced" textFill="#942828" toggleGroup="$ap_group">
+            <font>
+                <Font name="Rockwell" size="12.0" />
+            </font></RadioButton>
+        <TextField fx:id="mpt_id" layoutX="150.0" layoutY="116.0" prefHeight="17.0" prefWidth="103.0" />
+        <TextField fx:id="mpt_name" layoutX="150.0" layoutY="150.0" prefHeight="17.0" prefWidth="103.0" />
+        <TextField fx:id="mpt_invent" layoutX="150.0" layoutY="185.0" prefHeight="17.0" prefWidth="103.0" />
+        <TextField fx:id="mpt_price" layoutX="150.0" layoutY="217.0" prefHeight="17.0" prefWidth="103.0" />
+        <TextField fx:id="mpt_max" layoutX="150.0" layoutY="249.0" prefHeight="17.0" prefWidth="103.0" />
+        <TextField fx:id="mpt_min" layoutX="308.0" layoutY="249.0" prefHeight="17.0" prefWidth="103.0" />
+        <Button fx:id="mp_save_btn" layoutX="251.0" layoutY="330.0" mnemonicParsing="false" onAction="#mpt_saveCLICK" text="Save" textFill="#a82a2a">
+            <font>
+                <Font name="Rockwell" size="12.0" />
+            </font></Button>
+        <Button fx:id="mp_cancelBtn" layoutX="319.0" layoutY="330.0" mnemonicParsing="false" onAction="#mpt_cancelCLICK" text="Cancel" textFill="#a82a2a">
+            <font>
+                <Font name="Rockwell" size="12.0" />
+            </font></Button>
+        <Label layoutX="45.0" layoutY="116.0" text="ID" textFill="#b53535">
+            <font>
+                <Font name="Rockwell" size="12.0" />
+            </font></Label>
+        <Label layoutX="45.0" layoutY="150.0" text="Name" textFill="#b53535">
+            <font>
+                <Font name="Rockwell" size="12.0" />
+            </font></Label>
+        <Label layoutX="45.0" layoutY="185.0" text="Inv" textFill="#b53535">
+            <font>
+                <Font name="Rockwell" size="12.0" />
+            </font></Label>
+        <Label layoutX="45.0" layoutY="217.0" text="Price/Cost" textFill="#b53535">
+            <font>
+                <Font name="Rockwell" size="12.0" />
+            </font></Label>
+        <Label layoutX="45.0" layoutY="249.0" text="Max" textFill="#b53535">
+            <font>
+                <Font name="Rockwell" size="12.0" />
+            </font></Label>
+        <Label layoutX="271.0" layoutY="251.0" text="Min" textFill="#b53535">
+            <font>
+                <Font name="Rockwell" size="12.0" />
+            </font></Label>
+        <TextField fx:id="mpt_changetext" layoutX="150.0" layoutY="282.0" prefHeight="17.0" prefWidth="103.0" />
+        <Label fx:id="mpt_changelabel" layoutX="47.0" layoutY="286.0" text="Machine ID" textFill="#b53939">
+            <font>
+                <Font name="Rockwell" size="12.0" />
+            </font></Label>
+    </children>
+</AnchorPane>
+
